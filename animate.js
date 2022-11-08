@@ -2,20 +2,20 @@
 let question_type = document.querySelectorAll('[data-q]');
 
 question_type.forEach(que => {
-    que.addEventListener('click', function(e){
+    que.addEventListener('click', function (e) {
         let selectData = this.dataset.q;
         let qa_contents = document.querySelectorAll('[data-a]');
-        question_type.forEach(element =>{
-            if(element.dataset.q !== selectData){
+        question_type.forEach(element => {
+            if (element.dataset.q !== selectData) {
                 element.classList.remove('active');
-            }else{
+            } else {
                 element.classList.add('active');
             }
         });
         qa_contents.forEach(element => {
-            if(element.dataset.a !== selectData){
+            if (element.dataset.a !== selectData) {
                 element.classList.remove('active');
-            }else{
+            } else {
                 element.classList.add('active');
             }
         });
@@ -34,6 +34,7 @@ let animation = gsap.timeline({
     scrollTrigger: {
         trigger: '#sect-chat',
         // markers: true,
+        scroller: "main",
         start: 'top 60%',
         end: 'bottom 25%',
         toggleActions: "restart complete reverse none",
@@ -56,14 +57,18 @@ let main_animate = gsap.timeline({
     scrollTrigger: {
         trigger: '#sect-main',
         // markers: true,
+        scroller: "main",
         start: 'top 60%',
         end: 'bottom 25%',
         toggleActions: "restart complete reverse none",
+        defaults: {
+          duration: 1,
+        },
     }
 });
 main_animate
     .from('.main-title',
-        { duration: 0.6, opacity: 0, scale: 0.5, ease: 'ease-in' }
+        { duration: 0.6, opacity: 0, ease: 'ease-in' }
     )
     .from('.hand',
         { duration: 0.6, opacity: 0, width: 0, ease: 'circ' }
@@ -80,6 +85,7 @@ let active_animate = gsap.timeline({
     scrollTrigger: {
         trigger: '#sect-active',
         // markers: true,
+        scroller: "main",
         start: 'top 60%',
         end: 'bottom 25%',
         toggleActions: "restart complete reverse none",
@@ -89,7 +95,7 @@ let active_animate = gsap.timeline({
 active_animate
     .from('.active-content',
         {
-            stagger: 0.4, duration: 0.6, 
+            stagger: 0.4, duration: 0.6,
             onComplete: function () {
                 let cards = document.querySelector('.active-content');
                 cards.classList.add('finish');
@@ -101,6 +107,7 @@ let rule_animate = gsap.timeline({
     scrollTrigger: {
         trigger: '#sect-rule',
         // markers: true,
+        scroller: "main",
         start: 'top 60%',
         end: 'bottom 25%',
         toggleActions: "play complete reverse none",
