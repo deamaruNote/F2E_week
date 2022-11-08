@@ -1,9 +1,9 @@
 # 2022 F2E Week-1 | 活動網站設計
 
-▎DEMO  連結：[點我（請以桌機瀏覽）](https://westleft.github.io/f2e-web-design/) <br>
+▎DEMO 連結：[點我](https://github.com/3q-cindy/F2E_week) <br>
 ▎設計稿連結：[點我](https://www.figma.com/file/M2aMcZsEIKBbRdLkj7fCAd/F2E-%2F-W1%3A-%E6%B4%BB%E5%8B%95%E7%B6%B2%E7%AB%99%E8%A8%AD%E8%A8%88?node-id=90%3A702)
 
-[2022 The F2E 前端& UI 修煉精神時光屋](https://2022.thef2e.com/) 內的第一周，關於設計師(稿)的詳細資料可參考 [此連結](https://2022.thef2e.com/users/12061549261447630282)。
+[2022 The F2E 前端& UI 修煉精神時光屋](https://2022.thef2e.com/) 
 
 # 程式套件
 `gsap3`
