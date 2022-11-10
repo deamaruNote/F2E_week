@@ -114,9 +114,11 @@ main>nav {
 }
 
 .title-major {
+    font-family: Monument Extended;
     font-size: var(--text-h1);
     text-align: center;
     color: #ffffff;
+    text-shadow: 0 0 8px #ffffff80;
     font-weight: 600;
     margin: 25px 0;
     letter-spacing: 5px;
